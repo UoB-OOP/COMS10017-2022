@@ -82,23 +82,4 @@ Apply [here](https://www.jetbrains.com/student/).
 
 IntelliJ IDEA will be the only supported IDE in the labs.
 
-### Visual Studio
-
-University of Bristol has an active DreamSpark subscription where you can download and activate
-Visual Studio by logging in with your UoB email address. You do not need Visual Studio in this
-course, but it may come in handy for future projects.
-
-### Text editor + plugin
-
-Several popular open-source text editors are designed with programming in mind and will either
-support Java out-of-the-box or provide a plugin for it. While the feature set may not match a
-full-fledged IDE, these are usually more lightweight and can be used with other languages as well.
-
-A few popular choices are (in no particular order):
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Atom](https://atom.io/)
-* [Vim](https://github.com/vim/vim)
-
-All of these are installed on the MVB 2.11 lab machines, so you can access them remotely.
 
