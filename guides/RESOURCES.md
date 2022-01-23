@@ -80,6 +80,6 @@ can prove that you are a student or teaching staff member.
 
 Apply [here](https://www.jetbrains.com/student/).
 
-IntelliJ IDEA will be the only supported IDE in the labs.
+**IntelliJ IDEA will be the only supported IDE in the labs.**
 
 
