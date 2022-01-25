@@ -3,7 +3,7 @@
 This guide will help you install the following software:
 
 * Git
-* IntelliJ IDEA Community Edition 2020.3.2 or newer
+* IntelliJ IDEA Ultimate Edition 2020.3.2 or newer
 * Java (JDK) 11 or 17, not anything in between (i.e. not anything older than 11, and not 12~16)
 
 The general process is to first install IntelliJ (our Java IDE) and then install Java through IntelliJ's user interface.
@@ -58,9 +58,9 @@ double-click on the exe and follow installation instructions, *leave all setting
 installed, it should appear in your system tray, click on the icon and accept the EULA, a product
 list should appear. If it does not appear in the system tray, search for `JetBrains Toolbox` in the
 start menu. Once you are at the product list, click `install` on
-the  `IntelliJ IDEA Community Edition` entry.
-`IntelliJ IDEA Community Edition` should be available in the start menu. Check that you can start
-IntelliJ without issues.
+the  `IntelliJ IDEA Ultimate Edition` entry.
+`IntelliJ IDEA Ultimate Edition` should be available in the start menu. Check that you can start
+IntelliJ without issues. Activate it by using the license server (http://ls-jetbrains.bris.ac.uk:8080) or by [registering for a JetBrains account](https://account.jetbrains.com/login) using your university email.
 
 Proceed to setup Java [here](INTELLIJ_JDK_SETUP.md).
 
@@ -90,9 +90,10 @@ Extract the download and execute the binary file, for example:
 
 A product list window should appear shortly on the top right (it may take up to 1 minute on first
 launch).
-Once you are at the product list window, click `install` on the  `IntelliJ IDEA Community Edition`
+Once you are at the product list window, click `install` on the  `IntelliJ IDEA Ultimate Edition`
 entry.
-`IntelliJ IDEA Community Edition` should be available in your window manager.
+`IntelliJ IDEA Ultimate Edition` should be available in your window manager. Check that you can start
+IntelliJ without issues. Activate it by using the license server (http://ls-jetbrains.bris.ac.uk:8080) or by [registering for a JetBrains account](https://account.jetbrains.com/login) using your university email.
 
 Proceed to setup Java [here](INTELLIJ_JDK_SETUP.md).
 
@@ -111,8 +112,8 @@ Proceed to install IntelliJ. Download [Jetbrains toolbox](https://www.jetbrains.
 Like installing any macOS app, open the DMG image and drag the app to the Application directory.
 Once the app is copied, click on the icon and accept the EULA, a product list should appear. Search
 for `JetBrains Toolbox` in Spotlight if you cannot locate the app. At the product list window,
-click `install` on the  `IntelliJ IDEA Community Edition` entry.
-`IntelliJ IDEA Community Edition` should be available in *Launchpad*. Check that you can start
-IntelliJ without issues.
+click `install` on the  `IntelliJ IDEA Ultimate Edition` entry.
+`IntelliJ IDEA Ultimate Edition` should be available in *Launchpad*. Check that you can start
+IntelliJ without issues. Activate it by using the license server (http://ls-jetbrains.bris.ac.uk:8080) or by [registering for a JetBrains account](https://account.jetbrains.com/login) using your university email.
 
 Proceed to setup Java [here](INTELLIJ_JDK_SETUP.md).
