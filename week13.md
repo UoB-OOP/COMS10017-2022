@@ -94,6 +94,9 @@ check all is setup properly asking for the Git version ready to run:
 ```shell
 > git --version
 ```
+Note that we advise that Windows users use [Git for Windows](https://gitforwindows.org/) as this seamlessly manages your credentials. 
+Linux and Mac users should refer to Github's guide: [Connecting to GitHub with SSH](https://docs.github.com/en/github-ae@latest/authentication/connecting-to-github-with-ssh).
+Note that this distinction means that you will refer to your remote repo differently, depending on whether your are a Windows, Mac or Linux user.
 
 Git should report back the version you have installed. Next, we need a place in the Cloud to be used
 as a repository. Only one repository is needed for your entire team, that is why only one of you
@@ -164,8 +167,13 @@ summary of your workflow when using Git is roughly:
 Now it is time to link your local repository to the Github repository you have created online. To do
 this, we first connect your local project directory with your online repository:
 
+Windows users:
 ```shell
 > git remote add origin  https://github.com/USERNAME/OOP-01.git
+```
+Linux and Mac users:
+```shell
+> git remote add origin git@github.com:USERNAME/OOP-01.git
 ```
 
 where USERNAME is the username used to create the repository. (Depending on how you set up your
@@ -201,8 +209,14 @@ One you click _Invite a collaborator_, your partner should receive an email.
 Accept the invitation, and you should be taken to the repository. Take note of the repository clone
 command at the top of the page, it should look like:
 
+Windows users:
+```
     git clone https://github.com/THE_USERNAME_OF_THE_PERSON_WHO_CREATED_THE_REPO_AND_SHARED_IT_WITH_YOU/foo.git
-
+```
+Linux and Mac users:
+```
+    git clone git@github.com:THE_USERNAME_OF_THE_PERSON_WHO_CREATED_THE_REPO_AND_SHARED_IT_WITH_YOU/foo.git
+```
 Clone the repository with the command. When you are collaborating, each partner has a clone of the
 same online repo. You need to make sure you can both read from and write to it. Your workflow is
 now, roughly:
