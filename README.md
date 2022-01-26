@@ -10,7 +10,7 @@ and [third-party resources](guides/RESOURCES.md).
 **Practical materials (0%)**:
 
 * [Week 13](week13.md) - *26 Jan*
-
+* [Week 14](week14.md) - *02 Feb*
 ---
 
 For specific topics, visit:
