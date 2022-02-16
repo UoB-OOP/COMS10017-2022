@@ -45,7 +45,7 @@ System.out.println(sturdinessRating); // Prints 10
 
 ### Tasks
 
-**Download the skeleton code** [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/house-visitor-skeleton.zip)
+**Download the skeleton code** [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/pdfs/house-visitor-skeleton_no_idea.zip)
 
 1. Complete the `ChartedSurveyor` class which implements `House.VisitorInt`. It should return an integer representing the estimated rent per calendar month for a house. Which specific values should be returned is not important, but the `BrickHouse` should cost more than the `StickHouse`, which should in turn cost more than the `StrawHouse`. Use this `ChartedSurveyor` visitor to implement `public static Integer estimateRentPCM(House house)` in the `OnceUponATime` class
 
