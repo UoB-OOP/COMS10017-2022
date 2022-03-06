@@ -14,6 +14,11 @@ and [third-party resources](guides/RESOURCES.md).
 * [Week 15](week15.md) - *09 Feb*
 * [Week 16](week16.md) - *14 Feb*
 * [Week 17](week17.md) - *21 Feb*
+
+**Summative assignment (100%)**:
+
+* Week 19 ~
+    * [The ScotlandYard project](summative/README.md)
 ---
 
 For specific topics, visit:
