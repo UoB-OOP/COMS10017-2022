@@ -388,8 +388,7 @@ private static Set<SingleMove> makeSingleMoves(GameSetup setup, List<Player> det
     // TODO find out if destination is occupied by a detective
     //  if the location is occupied, don't add to the collection of moves to return      
     
-    for(Transport t : 
-       /* retrieve the edge values (i.e. ImmutableSet<Transport>) for source and destination from setup.graph */ ) {
+    for(Transport t : setup.graph.edgeValueOrDefault(source, destination, ImmutableSet.of()) ) {
       // TODO find out if the player has the required tickets
       //  if it does, construct a SingleMove and add it the collection of moves to return  
     }
