@@ -9,13 +9,16 @@ following alterations/clarifications:
 
 * Police or Bobbies will not be modelled.
 * The Ferry will be modelled.
-* The number of rounds in a game is variable (>0) specified by an initial setup rather than fixed to 22 rounds as in the board game.
-* When a detective moves, the ticket used will be given to Mr X.
-* Mr X should start with the following tickets: `Taxi*4, Bus*3, Underground*3, Double*2, Secret*5`.
+* Mr X and the detectives will be given variable (user-specified) amounts of tickets at the start, the normal rules for tickets follow:
+  - When a detective moves, the ticket used will be given to Mr X.
+  - Used Mr X tickets are discarded.
+* The number of rounds in a game is variable (>0) specified by an initial setup rather than fixed to 22 rounds as in the board game. 
+  - In the manual, the round count is defined as the number of transitions between Mr X and the detectives as a whole, this number is different from the number of slots on Mr X's Travel Log because Mr X can use double moves which occupies two slots (e.g. a 22 round game with two double move tickets means Mr X can have up to 24 moves). 
+  - For practical reasons of allowing the game to have flexible amounts of tickets for everyone, we've made a small simplification of the rule where the game can be setup with a variable amount of moves for Mr X (i.e. the slot count in Mr X's travel log) such that the game is over when Mr X's travel log is completely full, instead of some abritary number of rounds.  
 * Mr X cannot move into a detective location.
 * Mr X loses if it is his turn and he cannot make any move himself anymore.
 * Detectives lose if it is their turn and none of them can move, if some can move the others are just skipped.
-* `Ticket.SECRET` represents a black ticket
+* `Ticket.SECRET` represents a black ticket, this is used for Mr X's secret moves
 
 Pay special attention to rules for double moves and secret moves, since these are particularly
 complex.
@@ -91,7 +94,7 @@ in the same directory pattern. You should try to run the tests on the provided s
 
 **TODO:** Test the empty model and observe test failures:
 
-* IntelliJ (Recommended) - Locate the class `uk.ac.bris.cs.scotlandyard.model.AllTest` in IntelliJ and right click
+* IntelliJ (**Recommended**) - Locate the class `uk.ac.bris.cs.scotlandyard.model.AllTest` in IntelliJ and right click
   the green play button in the left-hand side gutter (i.e. where the line number is). IntelliJ
   should run all the tests and present you with a test report.
 
@@ -114,7 +117,7 @@ read the test names and assertion statements to understand what the tests are te
 
 While implementing the model, you may only want to focus on one particular test subset.
 
-* IntelliJ - each test should have a green play button on the left; clicking on it should run that
+* IntelliJ (**Recommended**) - each test should have a green play button on the left; clicking on it should run that
   specific test.
 * CLI - run a single test class by specifying the `test` argument when calling Maven, for example:
 
