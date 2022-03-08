@@ -4,7 +4,7 @@ This guide will help you install the following software:
 
 * Git
 * IntelliJ IDEA Ultimate Edition 2020.3.2 or newer
-* Java (JDK) 11 or 17, not anything in between (i.e. not anything older than 11, and not 12~16)
+* Java (JDK) 17
 
 The general process is to first install IntelliJ (our Java IDE) and then install Java through IntelliJ's user interface.
 
