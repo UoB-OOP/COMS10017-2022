@@ -27,19 +27,19 @@ complex.
 
 * Download a copy of the full rulebook
   from [Ravenburger's website](https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26646%20anl%202050897_2.pdf)
-* Download the Java version of the
-  game [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/sy_remote_game_2022.jar)
+* Download the Java version of the game 
+  - macOS (aarch64, **for M1 Mac ONLY**) - [sy-remote-win_x86_64-linux_x86_64-mac_aarch64.jar](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/sy-remote-win_x86_64-linux_x86_64-mac_aarch64.jar)
+  - Windows, Linux, macOS (x86_64, **anything that's not M1**) - [sy-remote-win_x86_64-linux_x86_64-mac_x86_64.jar](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/sy-remote-win_x86_64-linux_x86_64-mac_x86_64.jar)
 
-  The executable is a JAR file, run it on your machine like so:
+
+The executable is a JAR file, run it on your machine like so:
   ```shell
-   java -jar sy_remote_game_2022.jar
+   java -jar <path_to_the_game_jar_file_you_have_just_downloaded_from_above>
    ```
-  This version of the game shows Mr.X's location on the board for practical reasons so other players
-  may want to look away when Mr.X is making a move.
+This game is the online version with an offline mode in the menu (accessible via `Game | Local game`).
 
-  Follow the instructions
-  in [this video](https://web.microsoftstream.com/video/12e040aa-10d3-447b-a27f-0d2d4f9a911a) where
-  Sion plays against himself.
+For the offline mode, follow the instructions in [this video](https://web.microsoftstream.com/video/12e040aa-10d3-447b-a27f-0d2d4f9a911a) where Sion plays against himself.
+For the online mode, you will need credentials which we will give out during the first lab of coursework release.
 
 **TODO:** Familiarise yourself with the rules of the Scotland Yard board game and organise some
 sessions to play the game!
