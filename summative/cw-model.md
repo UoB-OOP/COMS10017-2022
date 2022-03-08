@@ -27,7 +27,7 @@ complex.
 
 * Download a copy of the full rulebook
   from [Ravenburger's website](https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26646%20anl%202050897_2.pdf)
-* Download the Java version of the game 
+* #### Download the Java version of the game 
   - macOS (aarch64, **for M1 Mac ONLY**) - [sy-remote-win_x86_64-linux_x86_64-mac_aarch64.jar](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/sy-remote-win_x86_64-linux_x86_64-mac_aarch64.jar)
   - Windows, Linux, macOS (x86_64, **anything that's not M1**) - [sy-remote-win_x86_64-linux_x86_64-mac_x86_64.jar](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/code/sy-remote-win_x86_64-linux_x86_64-mac_x86_64.jar)
 
