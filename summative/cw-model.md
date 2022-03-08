@@ -14,7 +14,7 @@ following alterations/clarifications:
   - Used Mr X tickets are discarded.
 * The number of rounds in a game is variable (>0) specified by an initial setup rather than fixed to 22 rounds as in the board game. 
   - In the manual, the round count is defined as the number of transitions between Mr X and the detectives as a whole, this number is different from the number of slots on Mr X's Travel Log because Mr X can use double moves which occupies two slots (e.g. a 22 round game with two double move tickets means Mr X can have up to 24 moves). 
-  - For practical reasons of allowing the game to have flexible amounts of tickets for everyone, we've made a small simplification of the rule where the game can be setup with a variable amount of moves for Mr X (i.e. the slot count in Mr X's travel log) such that the game is over when Mr X's travel log is completely full, instead of some abritary number of rounds.  
+  - For practical reasons, we've simplified this rule so the game can be set up with a variable max number of moves for Mr X (i.e. the slot count in Mr X's travel log), such that the game is over when Mr X's travel log is completely full, instead of some abritary number of rounds.
 * Mr X cannot move into a detective location.
 * Mr X loses if it is his turn and he cannot make any move himself anymore.
 * Detectives lose if it is their turn and none of them can move, if some can move the others are just skipped.
@@ -248,9 +248,9 @@ Next lets start thinking about what state data `MyGameState` needs to hold and d
 attributes. Exploring the getter methods, which we just defined, tells us that we at least need to
 hold:
 
-1) The `GameSetup` to return it and have access to the game graph and rounds
+1) The `GameSetup` to return it, as well as have access to the game graph and Mr X reveal moves
 2) A `Player` to hold the MrX player and a `List<Player>` to hold the detectives
-3) A `List<LogEntry>` to hold the travel log and count the rounds
+3) A `List<LogEntry>` to hold the travel log and count the moves Mr has taken
 4) A `Set<Move>` to hold the currently possible/available moves
 5) A `Set<Piece>` to hold the current winner(s)
 
@@ -344,14 +344,14 @@ private MyGameState(...){
 Add appropriate checks that these parameters handed over are not `null` and you will pass your first
 tests in `GameStateCreationTest`. Start working your way through the tests guiding your
 implementation. You may add checks, entire methods, fields, or even classes as you see fit. For
-instance, the test `#testEmptyRoundsShouldThrow` demands that there is at least one round to play,
+instance, the test `#testEmptyMovesShouldThrow` demands that there is at least one move to play,
 otherwise an `IllegalArgumentException` should be thrown. Thus, you should add a check in the
 constructor like this:
 
 <!-- @formatter:off -->
 ```java
 ...
-if(setup.rounds.isEmpty()) throw new IllegalArgumentException("Rounds is empty!");
+if(setup.moves.isEmpty()) throw new IllegalArgumentException("Moves is empty!");
 ...
 ```
 <!-- @formatter:on -->
@@ -520,7 +520,7 @@ This returned state should somehow be updated in the following way (not necessar
 
 Make sure to refer back to the [Scotland Yard game rulebook](https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26646%20anl%202050897_2.pdf), as well as the alterations/clarifications at the top of the page, for more details on the game logic.
 
-A correctly implemented `advance` method should pass most tests in `GameStatePlayerTest` and  `GameStateRoundTest`.
+A correctly implemented `advance` method should pass most tests in `GameStatePlayerTest` and  `GameStateMoveTest`.
 
 ##### DETERMINE WINNER
 
@@ -532,11 +532,10 @@ implementation should then pass most tests in `GameStateGameOverTest`.
 
 The detectives win, if:
 - A detective finish a move on the same station as Mr X.
-- There are no unoccupied stations for Mr X to travel to
+- There are no unoccupied stations for Mr X to travel to.
 
 Mr X wins, if:
-- Mr X manages to complete the last round/fill the log without getting caught by the detectives.
-The round is only over once the detectives have also completed their moves.
+- Mr X manages to fill the log and the detectives subsequently fail to catch him with their final moves.
 - The detectives can no longer move any of their playing pieces.
 
 ##### FINALISE GAMESTATE
