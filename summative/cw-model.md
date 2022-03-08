@@ -35,11 +35,18 @@ complex.
 The executable is a JAR file, run it on your machine like so:
   ```shell
    java -jar <path_to_the_game_jar_file_you_have_just_downloaded_from_above>
-   ```
+  ```
 This game is the online version with an offline mode in the menu (accessible via `Game | Local game`).
 
 For the offline mode, follow the instructions in [this video](https://web.microsoftstream.com/video/12e040aa-10d3-447b-a27f-0d2d4f9a911a) where Sion plays against himself.
 For the online mode, you will need credentials which we will give out during the first lab of coursework release.
+
+* How do I know I am using an M1 (Apple Silicon) Mac?
+  * Click on the `Apple logo` on the menu bar and click on `About This Mac`. in the `Chip` section, if you see something that starts with `Apple`, you are using an Apple Silicon Mac; if it starts with `Intel`, you are using an Intel Mac.
+  * For Apple Silicon Mac users, you should look for the following fields when downloading softwares: `Apple Silicon`, `arm64`, `aarch64`, `Arm Mac`, `M1 Mac`
+  * For Intel Mac users, you should look for the following fields when downloading softwares: `x86_64`, `x64`, `AMD64`, `Intel Mac`
+
+* Connecting to the online game server via SOCKS5 proxy. (OPTIONAL) [here](proxy.md)
 
 **TODO:** Familiarise yourself with the rules of the Scotland Yard board game and organise some
 sessions to play the game!
@@ -105,7 +112,7 @@ in the same directory pattern. You should try to run the tests on the provided s
   The result will look something like this:
 
       Results :
-
+      
       Failed tests: ...
       Tests in error: ....
       Tests run: 81, Failures: .., Errors: .., Skipped: 0
