@@ -39,7 +39,7 @@ The executable is a JAR file, run it on your machine like so:
 This game is the online version with an offline mode in the menu (accessible via `Game | Local game`).
 
 For the offline mode, follow the instructions in [this video](https://web.microsoftstream.com/video/12e040aa-10d3-447b-a27f-0d2d4f9a911a) where Sion plays against himself.
-For the online mode, you will need credentials which we will give out during the first lab of coursework release.
+For the online mode, you will need credentials which are available [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10017_2021_TB-2/content/oo/pdfs/useraccounts_game_server.pdf). Search for your UoB username in the 3rd column and then note down your personal username (integer on in 1st column) and password (alphanumeric string in 2nd column). Do **not** use personal data for your team's name when connecting to the game server: make up something fun!
 
 * How do I know I am using an M1 (Apple Silicon) Mac?
   * Click on the `Apple logo` on the menu bar and click on `About This Mac`. in the `Chip` section, if you see something that starts with `Apple`, you are using an Apple Silicon Mac; if it starts with `Intel`, you are using an Intel Mac.
