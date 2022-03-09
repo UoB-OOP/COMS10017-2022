@@ -183,7 +183,7 @@ Recommended reading:
 * [Scotland Yard game rulebook](https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26646%20anl%202050897_2.pdf)
 * Guava's [Immutable collections](https://github.com/google/guava/wiki/ImmutableCollectionsExplained) page
 * Guava's [ValueGraph](https://github.com/google/guava/wiki/GraphsExplained#valuegraph) section
-* [JavaDocs](https://uob-oop.github.io/coms10017/summative/apidocs/) for cw-model, also available as comments in the skeleton <!-- TODO: dead link -->
+* [JavaDocs](https://seis.bristol.ac.uk/~sh1670/SY/apidocs2022/index.html) for cw-model, also available as comments in the skeleton <!-- TODO: dead link -->
 <!-- @formatter:on -->
 
 Look around in the `uk.ac.bris.cs.scotlandyard.model` package, you can complete this project part by
