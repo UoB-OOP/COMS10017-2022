@@ -417,7 +417,7 @@ However, the above code is only a starting point for an implementation since `Do
 be implemented too, and they are more tricky to handle. Once moves and all exposed state is computed
 and returned by the `getter` methods you will pass more tests.
 Implementing `GameStage#getAvailableMoves` correctly should help pass
-through `GameStateMrXAvailableMovesTest` and `GameStateDetectivesAvailableMovesTest`.
+through `GameStateMrXAvailableMovesTest`.
 
 #### ADVANCE
 
